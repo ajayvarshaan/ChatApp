@@ -7,6 +7,8 @@ import cookieParser from 'cookie-parser';
 
 import authRoutes from './routes/auth.route.js';
 import messageRoutes from './routes/message.route.js';
+import profileRoutes from './routes/profile.route.js';
+import groupRoutes from './routes/group.route.js';
 import { connectDB } from './lib/db.js';
 import { app, server } from './lib/socket.js';
 
@@ -22,8 +24,12 @@ app.use(cors({
     credentials: true
 }));
 
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
+app.use("/api/profile", profileRoutes);
+app.use("/api/groups", groupRoutes);
 
 if (process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname, "../frontend/dist")));

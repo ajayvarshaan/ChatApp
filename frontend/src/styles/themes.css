@@ -1,0 +1,325 @@
+/* Dark Mode */
+body.dark-mode {
+    background: #0d1117;
+    color: #e6edf3;
+}
+
+body.dark-mode .chat-container {
+    background: #0d1117;
+}
+
+body.dark-mode .chat-container__empty {
+    background: #161b22;
+    color: #8b949e;
+}
+
+body.dark-mode .chat-container__header {
+    background: #161b22;
+    color: #e6edf3;
+    border-color: #30363d;
+}
+
+body.dark-mode .chat-container__messages {
+    background: #0d1117;
+}
+
+body.dark-mode .chat-container__input-form {
+    background: #161b22;
+    border-color: #30363d;
+}
+
+body.dark-mode .chat-container__reply-bar,
+body.dark-mode .chat-container__file-preview {
+    background: #1c2128;
+    border-color: #30363d;
+}
+
+body.dark-mode .sidebar {
+    background: #161b22;
+    color: #e6edf3;
+    border-color: #30363d;
+}
+
+body.dark-mode .sidebar__header {
+    background: #21262d;
+    color: #e6edf3;
+    border-color: #30363d;
+}
+
+body.dark-mode .sidebar__user {
+    background: #161b22;
+    border-color: #30363d;
+}
+
+body.dark-mode .sidebar__user:hover {
+    background: #1c2128;
+    border-color: #388bfd;
+}
+
+body.dark-mode .sidebar__user--active {
+    background: #1c2128;
+    border-color: #388bfd;
+}
+
+body.dark-mode .sidebar__user-info h4 {
+    color: #e6edf3;
+}
+
+body.dark-mode .sidebar__user-info p {
+    color: #8b949e;
+}
+
+body.dark-mode .message__bubble--received {
+    background: #21262d;
+    color: #e6edf3;
+    border-color: #30363d;
+}
+
+body.dark-mode .message__bubble--sent {
+    background: #1f6feb;
+    color: #ffffff;
+}
+
+body.dark-mode .message__reply-preview {
+    background: rgba(255, 255, 255, 0.05);
+    border-left-color: #388bfd;
+}
+
+body.dark-mode .message__file-link {
+    background: rgba(255, 255, 255, 0.05);
+    color: #58a6ff;
+}
+
+body.dark-mode .message__file-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .MuiTextField-root .MuiOutlinedInput-root {
+    background: #0d1117;
+    color: #e6edf3;
+}
+
+body.dark-mode .MuiTextField-root .MuiOutlinedInput-root input {
+    color: #e6edf3;
+}
+
+body.dark-mode .MuiTextField-root .MuiOutlinedInput-root fieldset {
+    border-color: #30363d;
+}
+
+body.dark-mode .MuiTextField-root .MuiOutlinedInput-root:hover fieldset {
+    border-color: #388bfd;
+}
+
+body.dark-mode .MuiTextField-root .MuiOutlinedInput-root.Mui-focused fieldset {
+    border-color: #58a6ff;
+}
+
+body.dark-mode .MuiPaper-root {
+    background: #161b22;
+    color: #e6edf3;
+}
+
+body.dark-mode .MuiDialog-paper {
+    background: #161b22;
+    color: #e6edf3;
+}
+
+body.dark-mode .MuiDialogTitle-root {
+    color: #e6edf3;
+}
+
+body.dark-mode .MuiDialogContent-root {
+    color: #e6edf3;
+}
+
+body.dark-mode .MuiTypography-root {
+    color: inherit;
+}
+
+body.dark-mode .MuiButton-root {
+    color: #e6edf3;
+}
+
+body.dark-mode .MuiIconButton-root {
+    color: #8b949e;
+}
+
+body.dark-mode .MuiIconButton-root:hover {
+    color: #e6edf3;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .MuiMenu-paper {
+    background: #161b22;
+    border: 1px solid #30363d;
+}
+
+body.dark-mode .MuiMenuItem-root {
+    color: #e6edf3;
+}
+
+body.dark-mode .MuiMenuItem-root:hover {
+    background: #1c2128;
+}
+
+body.dark-mode .MuiTabs-root {
+    border-color: #30363d;
+}
+
+body.dark-mode .MuiTab-root {
+    color: #8b949e;
+}
+
+body.dark-mode .MuiTab-root.Mui-selected {
+    color: #58a6ff;
+}
+
+body.dark-mode .MuiTabs-indicator {
+    background-color: #58a6ff;
+}
+
+body.dark-mode .MuiInputLabel-root {
+    color: #8b949e;
+}
+
+body.dark-mode .MuiInputLabel-root.Mui-focused {
+    color: #58a6ff;
+}
+
+body.dark-mode .MuiSelect-root {
+    color: #e6edf3;
+}
+
+body.dark-mode .MuiSelect-icon {
+    color: #8b949e;
+}
+
+body.dark-mode .MuiList-root {
+    background: #161b22;
+}
+
+body.dark-mode .MuiListItem-root {
+    color: #e6edf3;
+}
+
+body.dark-mode .MuiListItemText-primary {
+    color: #e6edf3;
+}
+
+body.dark-mode .MuiListItemText-secondary {
+    color: #8b949e;
+}
+
+body.dark-mode .MuiDivider-root {
+    border-color: #30363d;
+}
+
+body.dark-mode .MuiSwitch-track {
+    background-color: #30363d;
+}
+
+body.dark-mode .MuiSwitch-thumb {
+    color: #8b949e;
+}
+
+body.dark-mode .MuiSwitch-root .Mui-checked .MuiSwitch-thumb {
+    color: #58a6ff;
+}
+
+body.dark-mode .MuiSwitch-root .Mui-checked + .MuiSwitch-track {
+    background-color: #1f6feb;
+}
+
+body.dark-mode .sidebar__unread-badge {
+    background: #f85149;
+    color: #ffffff;
+}
+
+body.dark-mode .typing-indicator span {
+    background: #8b949e;
+}
+
+body.dark-mode .profile-page {
+    background: linear-gradient(135deg, #1f6feb 0%, #8957e5 100%);
+}
+
+body.dark-mode .profile-page__container {
+    background: #161b22;
+    color: #e6edf3;
+}
+
+/* Theme Colors */
+body.theme-purple .message__bubble--sent {
+    background: #7b2cbf;
+}
+
+body.theme-purple .sidebar__header {
+    background: #5a189a;
+}
+
+body.theme-green .message__bubble--sent {
+    background: #2d6a4f;
+}
+
+body.theme-green .sidebar__header {
+    background: #1b4332;
+}
+
+body.theme-orange .message__bubble--sent {
+    background: #d97706;
+}
+
+body.theme-orange .sidebar__header {
+    background: #b45309;
+}
+
+/* Font Sizes */
+body.font-small .message__bubble p {
+    font-size: 12px;
+}
+
+body.font-small {
+    font-size: 13px;
+}
+
+body.font-large .message__bubble p {
+    font-size: 16px;
+}
+
+body.font-large {
+    font-size: 15px;
+}
+
+/* Compact Mode */
+body.compact-mode .message__bubble {
+    padding: 6px 10px;
+}
+
+body.compact-mode .sidebar__user {
+    padding: 8px;
+}
+
+body.compact-mode .chat-container__header {
+    padding: 10px 16px;
+}
+
+body.compact-mode .message {
+    margin-bottom: 2px;
+}
+
+/* Drag and Drop Overlay */
+.chat-container__drag-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 113, 133, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    color: white;
+    pointer-events: none;
+}

@@ -174,6 +174,20 @@
     }
   }
 
+  &__file-preview {
+    padding: 12px 20px;
+    background: #fff3cd;
+    border-top: 1px solid #d5d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    @media (max-width: 768px) {
+      padding: 10px 16px;
+    }
+  }
+
   &__reply-content {
     flex: 1;
     display: flex;
@@ -258,6 +272,81 @@
     }
   }
 
+  &__status {
+    display: block;
+    text-align: right;
+    font-size: 11px;
+    margin-top: 2px;
+    opacity: 0.8;
+    color: #e0e0e0;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 4px;
+
+    .checkmark {
+      position: relative;
+      font-size: 14px;
+      line-height: 1;
+      
+      &:first-child {
+        margin-right: -6px;
+      }
+    }
+
+    &--read {
+      color: #53bdeb;
+      opacity: 1;
+    }
+  }
+
+  &__edited {
+    display: inline-block;
+    font-size: 11px;
+    opacity: 0.7;
+    font-style: italic;
+    margin-left: 6px;
+    color: inherit;
+  }
+
+  &__file {
+    margin-top: 8px;
+  }
+
+  &__image {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+
+    @media (max-width: 768px) {
+      max-width: 200px;
+      max-height: 200px;
+    }
+  }
+
+  &__file-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 13px;
+    transition: background 0.2s;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    svg {
+      font-size: 18px;
+    }
+  }
+
   &__reply-preview {
     display: flex;
     align-items: center;
@@ -306,5 +395,39 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.typing-indicator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 0;
+
+  span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #999;
+    animation: typing 1.4s infinite;
+
+    &:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+  }
+}
+
+@keyframes typing {
+  0%, 60%, 100% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  30% {
+    transform: translateY(-10px);
+    opacity: 1;
   }
 }

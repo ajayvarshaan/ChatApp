@@ -63,5 +63,38 @@ export const useAuthStore = create((set) => ({
         }
     },
 
+    updateProfile: async (data) => {
+        try {
+            const res = await fetch('/api/profile/update', {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
+                credentials: 'include'
+            });
+            const json = await res.json();
+            if (!res.ok) throw new Error(json.message);
+            set({ authUser: json });
+        } catch (error) {
+            throw error;
+        }
+    },
+
+    uploadProfilePic: async (file) => {
+        try {
+            const formData = new FormData();
+            formData.append('profilePic', file);
+            const res = await fetch('/api/profile/upload-pic', {
+                method: 'POST',
+                body: formData,
+                credentials: 'include'
+            });
+            const json = await res.json();
+            if (!res.ok) throw new Error(json.message);
+            set({ authUser: json });
+        } catch (error) {
+            throw error;
+        }
+    },
+
     setOnlineUsers: (users) => set({ onlineUsers: users })
 }));
